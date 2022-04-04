@@ -8,8 +8,8 @@ const blogpost = ({ blog_post }) => {
         <div className=" container mx-auto my-8 break-words">
             <h1 className=' text-3xl text-center my-4'>{blog_post.attributes.title}</h1>
             <div className=' grid grid-cols-2'>
-                <div className=' my-2 w-full h-auto'>
-                    <img className=' mx-auto w-full rounded-lg h-6/12' src={api_url + blog_post.attributes.image.data.attributes.formats.medium.url} alt="image could not load" width="400" height="400" />
+                <div className=' my-2 w-full '>
+                    <img className=' mx-auto w-full rounded-lg h-3/6' src={api_url + blog_post.attributes.image.data.attributes.formats.medium.url} alt="image could not load" width="400" height="400" />
                 </div>
                 <div className=' w-11/12 mx-auto mt-4'>
                     <p>{blog_post.attributes.desc}</p>

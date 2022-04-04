@@ -64,7 +64,7 @@ export default function Home({ blog_posts }) {
 }
 
 export const getServerSideProps = async () => {
-  const res_posts = await axios.get("http://localhost:1337/api/posts?fields=title,meta_desc&populate=image")
+  const res_posts = await axios.get("http://localhost:1337/api/posts?fields=title,meta_desc,createdAt")
   const posts_data = await res_posts.data
 
   return {

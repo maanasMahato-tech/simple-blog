@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "viewermsgs",
+  "info": {
+    "singularName": "viewermsg",
+    "pluralName": "viewermsgs",
+    "displayName": "viewermsg"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "message": {
+      "type": "text"
+    }
+  }
+}
